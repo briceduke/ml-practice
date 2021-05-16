@@ -31,8 +31,8 @@ def run(sqft):
 
     dict[prediction[0][0]] = score
 
-for _ in range(100):
-    run(3000) # Enter area to predict price
+for _ in range(10000):
+    run(2650) # Enter area to predict price
 
 result = max(dict, key=dict.get) # Get the prediction with the highest score
 
